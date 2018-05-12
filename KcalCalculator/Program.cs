@@ -53,7 +53,7 @@ namespace KcalCalculator
             Console.WriteLine("Изчисление на калориите ->");
             Console.WriteLine();
 
-            Console.WriteLine("********************** BASAL METABOLIC RATE - BMR по формулата на Harrys–Benedict:");
+            Console.WriteLine("********************** BASAL METABOLIC RATE - BMR по формулата на Мифин-Сейнт Жур:");
             Console.WriteLine();
 
             Console.Write("Пол (male или famale) = ");
@@ -80,7 +80,7 @@ namespace KcalCalculator
             Console.WriteLine();
             if (gender == "male")
             {
-                var kcalMinimum = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+                var kcalMinimum = (10 * weight) + (6.25 * height) - (5 * age) + 5;
 
                 if (activity == 1)
                 {
@@ -165,7 +165,7 @@ namespace KcalCalculator
             }
             else if (gender == "famale")
             {
-                var kcalMinimum = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+                var kcalMinimum = (10 * weight) + (6.25 * height) - (5 * age) - 161;
 
                 if (activity == 1)
                 {
